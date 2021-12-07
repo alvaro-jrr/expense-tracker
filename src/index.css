@@ -1,13 +1,88 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+	--main: #078080;
+	--header-headline: #fffffe;
+	--headline: rgb(60, 74, 91);
+	--radius: 0.25rem;
+	--bg: #fffffe;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* ------ Josh Comeau Custom CSS Reset ----- */
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+	isolation: isolate;
+}
+
+/* Body Settings */
+
+body {
+	font-family: "Chivo", sans-serif;
+}
+
+/* Heading Settings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Readex Pro", sans-serif;
+	letter-spacing: 1px;
+	color: var(--headline);
+}
+
+h1 {
+	font-size: 1.55rem;
+}
+
+h2 {
+	font-size: 1.35rem;
 }
