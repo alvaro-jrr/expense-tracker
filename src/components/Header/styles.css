@@ -1,0 +1,28 @@
+.Header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 3.5rem;
+	background: var(--main);
+	user-select: none;
+}
+
+.Header h1 {
+	color: var(--header-headline);
+}
+
+.Header-icon {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	right: 2rem;
+	padding: 0.5rem;
+	text-decoration: none;
+	color: var(--paragraph);
+	border-radius: var(--radius);
+}
+
+.Header-icon:hover {
+	background: var(--background);
+}
