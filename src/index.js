@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "@fontsource/readex-pro";
-import "@fontsource/chivo";
+import "@fontsource/outfit";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";

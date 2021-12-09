@@ -25,7 +25,7 @@ const TransactionForm = () => {
 		setBalance((prevBalance) => {
 			const { amount, type } = transaction;
 
-			const newAmount = type === "income" ? +amount : +amount * -1;
+			const newAmount = type === "income" ? amount : amount * -1;
 
 			return prevBalance + newAmount;
 		});
@@ -46,7 +46,8 @@ const TransactionForm = () => {
 					step="any"
 					{...register("amount", {
 						required: "An amount is required",
-						min: 0,
+						valueAsNumber: true,
+						min: 0.0005,
 					})}
 				/>
 			</label>

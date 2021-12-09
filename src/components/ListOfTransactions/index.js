@@ -1,6 +1,7 @@
 import React from "react";
 import useTransactions from "hooks/useTransactions";
 import Transaction from "components/Transaction";
+import "./styles.css";
 
 const ListOfTransactions = () => {
 	const { transactions } = useTransactions();
@@ -17,7 +18,9 @@ const ListOfTransactions = () => {
 		</article>
 	) : (
 		<>
-			<span>Nothing to show here yet... add a transaction!</span>
+			<span className="empty">
+				Nothing to show here yet... add a transaction!
+			</span>
 		</>
 	);
 };

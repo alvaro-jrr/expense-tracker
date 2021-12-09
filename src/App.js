@@ -10,8 +10,8 @@ const App = () => {
 		<div className="App">
 			<Header />
 
-			<main className="App-main">
-				<TransactionsContextProvider>
+			<TransactionsContextProvider>
+				<main className="App-main">
 					<section className="App-section">
 						<h2>Balance</h2>
 
@@ -29,8 +29,8 @@ const App = () => {
 
 						<TransactionForm />
 					</section>
-				</TransactionsContextProvider>
-			</main>
+				</main>
+			</TransactionsContextProvider>
 		</div>
 	);
 };
