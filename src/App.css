@@ -5,29 +5,19 @@
 
 .App-main {
 	display: flex;
-	align-self: center;
 	flex-flow: column nowrap;
-	gap: 2rem;
+	row-gap: 2rem;
 	padding: 2rem;
-	width: 100%;
-	max-width: 460px;
 	min-height: calc(100vh - 3.5rem);
+	width: 100%;
+	max-width: 450px;
+	align-self: center;
 }
 
 .App-section {
 	display: flex;
 	flex-flow: column nowrap;
-	row-gap: 1rem;
-}
-
-/* Button */
-
-.btn {
-	height: 3rem;
-	border: none;
-	border: 2px solid var(--main);
-	border-radius: var(--radius);
-	background-color: #fff;
+	gap: 1rem;
 }
 
 /* Form */
@@ -35,21 +25,19 @@
 .form {
 	display: flex;
 	flex-flow: column nowrap;
-	row-gap: 1rem;
+	gap: 1rem;
 }
 
 .form label {
 	display: flex;
 	flex-flow: column nowrap;
-	row-gap: 0.25rem;
+	gap: 0.5rem;
 }
 
 .form input,
-.form select {
+.form select,
+.btn {
 	height: 3rem;
-	border: none;
 	padding: 0 0.5rem;
 	border-radius: var(--radius);
-	border: 1px solid rgb(60, 74, 91);
-	background-color: #fff;
 }
