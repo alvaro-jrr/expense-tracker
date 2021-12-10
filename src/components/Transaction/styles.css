@@ -1,0 +1,17 @@
+.Transaction {
+	display: flex;
+	align-items: center;
+	height: 3rem;
+	list-style: none;
+	padding: 1rem;
+	background-color: var(--transaction-bg);
+	border-radius: var(--radius);
+}
+
+.income {
+	border-left: 0.5rem solid var(--income);
+}
+
+.outcome {
+	border-left: 0.5rem solid var(--outcome);
+}

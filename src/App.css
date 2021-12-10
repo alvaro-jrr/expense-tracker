@@ -1,36 +1,57 @@
 .App {
-	display: flex;
-	flex-flow: column nowrap;
+	background: var(--bg);
+	min-height: 100vh;
+}
+
+/* App-wrapper */
+
+.App-wrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 2rem;
+	padding: 2rem;
+	min-height: calc(100vh - 3.5rem);
 }
 
 .App-main {
 	display: flex;
 	flex-flow: column nowrap;
-	row-gap: 2rem;
-	padding: 2rem;
-	min-height: calc(100vh - 3.5rem);
+	gap: 2rem;
 	width: 100%;
-	max-width: 450px;
-	align-self: center;
 }
 
-.App-section {
+.App-section,
+.App-aside {
 	display: flex;
 	flex-flow: column nowrap;
 	gap: 1rem;
+}
+
+.App-main,
+.App-aside {
+	padding: 2rem;
+	background: #fffffe;
+	border-radius: var(--radius);
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.App-aside {
+	min-height: 450px;
 }
 
 /* Form */
 
-.form {
+.form,
+.form label {
 	display: flex;
 	flex-flow: column nowrap;
+}
+
+.form {
 	gap: 1rem;
 }
 
 .form label {
-	display: flex;
-	flex-flow: column nowrap;
 	gap: 0.5rem;
 }
 
@@ -38,6 +59,18 @@
 .form select,
 .btn {
 	height: 3rem;
-	padding: 0 0.5rem;
+	padding: 0 1rem;
 	border-radius: var(--radius);
+	border: none;
+	outline: 1px solid;
+}
+
+@media screen and (min-width: 50rem) {
+	.App-main {
+		width: 400px;
+	}
+
+	.App-wrapper {
+		grid-template-columns: auto 1fr;
+	}
 }

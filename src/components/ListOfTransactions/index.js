@@ -8,7 +8,7 @@ const ListOfTransactions = () => {
 
 	return transactions.length ? (
 		<article className="ListOfTransactions">
-			<ul>
+			<ul className="Transactions-list">
 				{transactions.map((transaction, index) => {
 					return (
 						<Transaction key={index} id={index} {...transaction} />

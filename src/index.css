@@ -1,5 +1,11 @@
 :root {
+	--main: #3f37c9;
 	--radius: 0.25rem;
+	--bg: rgb(247, 247, 250);
+	--header-headline: #fffffe;
+	--income: rgb(65, 220, 101);
+	--outcome: rgb(255, 84, 96);
+	--transaction-bg: rgb(255, 255, 255);
 }
 
 /* ------ Josh Comeau Custom CSS Reset ----- */
@@ -53,6 +59,12 @@ h6 {
 #root,
 #__next {
 	isolation: isolate;
+}
+
+/* Body Settings */
+
+body {
+	font-family: "Roboto", sans-serif;
 }
 
 /* Header Settings */

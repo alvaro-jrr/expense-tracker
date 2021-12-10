@@ -1,8 +1,12 @@
-import { useContext } from "react";
-import Context from "context/TransactionsContextProvider";
+import { useEffect } from "react";
+import useGlobalBalance from "./useGlobalBalance";
 
 const useBalance = () => {
-	const { balance, setBalance } = useContext(Context);
+	const { balance, setBalance } = useGlobalBalance();
+
+	useEffect(() => {
+		localStorage.setItem("lastBalance", balance);
+	}, [balance]);
 
 	return { balance, setBalance };
 };
