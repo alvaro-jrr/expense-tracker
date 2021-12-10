@@ -1,8 +1,12 @@
-import { useContext } from "react";
-import Context from "context/TransactionsContextProvider";
+import { useEffect } from "react";
+import useGlobalTransactions from "./useGlobalTransactions";
 
 const useTransactions = () => {
-	const { transactions, setTransactions } = useContext(Context);
+	const { transactions, setTransactions } = useGlobalTransactions();
+
+	useEffect(() => {
+		localStorage.setItem("lastTransactions", JSON.stringify(transactions));
+	}, [transactions]);
 
 	return { transactions, setTransactions };
 };

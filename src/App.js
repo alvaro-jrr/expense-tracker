@@ -11,25 +11,29 @@ const App = () => {
 			<Header />
 
 			<TransactionsContextProvider>
-				<main className="App-main">
-					<section className="App-section">
-						<h2>Balance</h2>
+				<div className="App-wrapper">
+					<main className="App-main">
+						<div className="main-left">
+							<section className="App-section">
+								<h2>Balance</h2>
 
-						<Balance />
-					</section>
+								<Balance />
+							</section>
+						</div>
 
-					<section className="App-section">
+						<section className="App-section">
+							<h2>Add Transaction</h2>
+
+							<TransactionForm />
+						</section>
+					</main>
+
+					<aside className="App-aside">
 						<h2>Transactions</h2>
 
 						<ListOfTransactions />
-					</section>
-
-					<section className="App-section">
-						<h2>Add Transaction</h2>
-
-						<TransactionForm />
-					</section>
-				</main>
+					</aside>
+				</div>
 			</TransactionsContextProvider>
 		</div>
 	);
