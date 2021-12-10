@@ -11,6 +11,7 @@ const Header = () => {
 				className="Header-icon"
 				href="https://github.com/alvaro-jrr/expense-tracker"
 				target="_blank"
+				rel="noreferrer"
 				title="Find me on Github"
 			>
 				<AiFillGithub size="1.5rem" color="#fffffe" />
@@ -19,4 +20,4 @@ const Header = () => {
 	);
 };
 
-export default Header;
+export default React.memo(Header);
